@@ -1,13 +1,29 @@
 {
   "name": "abstracta-ui-automation",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Testing framework for demoblaze site",
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/ggadda/training#readme",
+  "bugs": {
+    "url": "https://github.com/ggadda/training/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggadda/training.git"
+  },
   "license": "ISC",
+  "author": "ggadda",
   "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "dependencies": {
+    "playwright": "^1.58.2",
+    "playwright-core": "^1.58.2",
+    "undici-types": "^7.18.2"
+  },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.5.0"
