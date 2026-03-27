@@ -97,6 +97,9 @@ To add new endpoints:
 1. Add the corresponding TypeScript interface in `src/models/` if needed.
 2. Add a method to the appropriate API class in `src/api/`.
 
+## Author
+
+**Gabriela Gadda** — Senior QA Automation Engineer
 ## Tech stack
 
 - [Playwright](https://playwright.dev/) v1.58 — Test runner and HTTP client
