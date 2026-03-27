@@ -84,19 +84,6 @@ npm run report
     └── part2-orders.spec.ts    # Exercise Part 2
 ```
 
-## Design decisions
-
-| Decision | Rationale |
-|----------|-----------|
-| **Playwright for API testing** | First-class `APIRequestContext` for HTTP calls, native `expect` assertions, and HTML reports out of the box. |
-| **Service layer pattern** | Tests call `petApi.create(pet)` instead of raw HTTP — readable, no URL duplication, easy to extend. |
-| **Factory pattern** | `PetFactory.build({ status: 'sold' })` generates valid data with sensible defaults. |
-| **TypeScript interfaces** | `Pet` and `Order` mirror the Swagger schema; mismatches are caught at compile time. |
-| **Serial execution** | `test.describe.serial` ensures tests that share state run in order. |
-| **Retry utility** | Reusable `retryRequest()` with configurable retries and exponential backoff for flaky endpoints. |
-| **Shared config** | `BASE_URL` and `DEFAULT_HEADERS` live in `src/config.ts` — single source of truth. |
-| **Cleanup/teardown** | `afterAll` hooks delete created pets and orders to avoid polluting the shared API. |
-
 ## Extending the framework
 
 To add new tests:
